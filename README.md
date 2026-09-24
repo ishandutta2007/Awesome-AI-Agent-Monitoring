@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Agent-Monitoring?style=flat-square&color=gold" alt="GitHub Stars"/>
+  <img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Agent-Monitoring?style=flat-square&color=gold" alt="GitHub_Stars"/>
   <img src="https://img.shields.io/github/license/ishandutta2007/Awesome-AI-Agent-Monitoring?style=flat-square&color=blue" alt="License"/>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -61,9 +61,9 @@ Below is a comparison of top SaaS platforms for AI agent observability, ordered 
 
 ## 🔓 Open-Source GitHub Projects
 
-Community-driven open-source projects for self-hosted agent tracing and evaluation, sorted by GitHub Star Count (descending):
+Community-driven open-source projects for self-hosted agent tracing and evaluation, sorted by GitHub Stars_Count (descending):
 
-| 📦 Repository | 🌟 Star Count | 📜 License | 🎯 Primary Focus |
+| 📦 Repository | 🌟 Stars_Count | 📜 License | 🎯 Primary Focus |
 | :--- | :--- | :--- | :--- |
 | **[Langfuse](https://github.com/langfuse/langfuse)** | [<img stroke="none" src="https://img.shields.io/github/stars/langfuse/langfuse?style=social&color=white" alt="Langfuse Stars"/>](https://github.com/langfuse/langfuse/stargazers) | MIT | Full open-source LLM & agent tracing, session replay, prompt versioning, and evals. |
 | **[Comet Opik](https://github.com/comet-ml/opik)** | [<img stroke="none" src="https://img.shields.io/github/stars/comet-ml/opik?style=social&color=white" alt="Opik Stars"/>](https://github.com/comet-ml/opik/stargazers) | Apache-2.0 | Open evaluation & tracing platform built for LLM traces, datasets, and prompt experiments. |
