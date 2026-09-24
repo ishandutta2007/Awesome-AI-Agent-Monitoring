@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 52px; fill: url(#title-grad); }
+    .subtitle { font-family: system-ui, -apple-system, sans-serif; font-weight: 500; font-size: 22px; fill: #94a3b8; }
+    .tag { font-family: system-ui, -apple-system, sans-serif; font-weight: 600; font-size: 14px; fill: #38bdf8; letter-spacing: 1.5px; text-transform: uppercase; }
+    
+    /* Dynamic background animated waves & nodes */
+    .pulse-node { animation: pulse 3s infinite alternate ease-in-out; }
+    .pulse-line { stroke-dasharray: 8 8; animation: dash 20s linear infinite; }
+    .float-grid { animation: float 6s infinite alternate ease-in-out; }
+    
+    @keyframes pulse {
+      0% { r: 4px; opacity: 0.4; }
+      100% { r: 8px; opacity: 1; filter: drop-shadow(0 0 6px #38bdf8); }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -100; }
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-10px); }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg-grad)" rx="16"/>
+
+  <!-- Background Dynamic Elements (Layered behind text) -->
+  <g class="float-grid" opacity="0.25">
+    <circle cx="150" cy="80" r="180" fill="url(#glow-grad)"/>
+    <circle cx="1050" cy="220" r="220" fill="url(#glow-grad)"/>
+    
+    <!-- Network Tracing Lines (Simulating Agent Telemetry) -->
+    <path d="M 50 220 Q 200 120 400 200 T 750 150 T 1150 240" fill="none" stroke="#6366f1" stroke-width="2" class="pulse-line"/>
+    <path d="M 100 80 Q 350 250 650 100 T 1100 120" fill="none" stroke="#38bdf8" stroke-width="1.5" class="pulse-line" style="animation-duration: 15s;"/>
+
+    <!-- Nodes -->
+    <circle cx="200" cy="150" fill="#38bdf8" class="pulse-node" style="animation-delay: 0s;"/>
+    <circle cx="400" cy="200" fill="#818cf8" class="pulse-node" style="animation-delay: 0.7s;"/>
+    <circle cx="650" cy="100" fill="#c084fc" class="pulse-node" style="animation-delay: 1.4s;"/>
+    <circle cx="900" cy="180" fill="#38bdf8" class="pulse-node" style="animation-delay: 2.1s;"/>
+  </g>
+
+  <!-- Foreground Content Block (High contrast, clearly visible) -->
+  <g transform="translate(80, 0)">
+    <!-- Category Tag -->
+    <rect x="0" y="55" width="220" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="110" y="74" text-anchor="middle" class="tag">🤖 CURATED ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="0" y="140" class="title" filter="url(#glow)">Awesome AI Agent Monitoring</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="185" class="subtitle">Traces, Tool-Call Spans, Multi-Agent Sessions, Evals &amp; Cost Tracking</text>
+    <text x="0" y="215" class="subtitle" fill="#64748b" font-size="16px">The definitive guide to production observability &amp; health for AI agents</text>
+
+    <!-- Decorative Bottom Bar -->
+    <rect x="0" y="250" width="1040" height="2" fill="#334155"/>
+    <rect x="0" y="250" width="180" height="2" fill="url(#title-grad)"/>
+  </g>
+</svg>
