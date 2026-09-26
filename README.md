@@ -61,7 +61,7 @@ Below is a comparison of top SaaS platforms for AI agent observability, ordered 
 
 ## 🔓 Open-Source GitHub Projects
 
-Community-driven open-source projects for self-hosted agent tracing and evaluation, sorted by GitHub Stars_Count (descending):
+Community-driven open-source projects for self-hosted agent tracing and evaluation, sorted by GitHub_Stars_Count (descending):
 
 | 📦 Repository | 🌟 Stars_Count | 📜 License | 🎯 Primary Focus |
 | :--- | :--- | :--- | :--- |
