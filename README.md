@@ -74,6 +74,7 @@ Community-driven open-source projects for self-hosted agent tracing and evaluati
 | **[AgentOps SDK](https://github.com/AgentOps-AI/agentops)** | [<img stroke="none" src="https://img.shields.io/github/stars/AgentOps-AI/agentops?style=social&color=white" alt="AgentOps Stars"/>](https://github.com/AgentOps-AI/agentops/stargazers) | MIT | Python SDK for AI agent session recording, tool tracking, and cost analytics. |
 | **[Lunary](https://github.com/lunary-ai/lunary)** | [<img stroke="none" src="https://img.shields.io/github/stars/lunary-ai/lunary?style=social&color=white" alt="Lunary Stars"/>](https://github.com/lunary-ai/lunary/stargazers) | MIT | Unified observability, prompt evaluation, and analytics platform for GenAI applications. |
 | **[OpenLIT](https://github.com/openlit/openlit)** | [<img stroke="none" src="https://img.shields.io/github/stars/openlit/openlit?style=social&color=white" alt="OpenLIT Stars"/>](https://github.com/openlit/openlit/stargazers) | Apache-2.0 | OpenTelemetry-native auto-instrumentation and observability for AI GPUs, LLMs, and agent workflows. |
+| **[OpenClaw Monitor](https://github.com/flik2002/openclaw-monitor)** | [<img stroke="none" src="https://img.shields.io/github/stars/flik2002/openclaw-monitor?style=social&color=white" alt="OpenClaw Monitor Stars"/>] (https://github.com/flik2002/openclaw-monitor/stargazers) | MIT | Free self-hosted monitoring dashboard for OpenClaw AI agents: token usage, session tracking, 7-day trends, and multi-model support. Vue 3 + ECharts. |
 
 ---
 
